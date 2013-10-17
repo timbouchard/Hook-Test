@@ -1,1 +1,19 @@
-RewriteEngine off
+RewriteEngine on
+RewriteRule ^([^/\.]+)/?$ /$1.php [L]
+RewriteRule ^([^/\.]+)/([^/\.]+)/?$ /$1.php?a=$2 [L]
+RewriteRule ^([^/\.]+)/([^/\.]+)/([^/\.]+)/?$ /$1.php?a=$2&b=$3 [L]
+RewriteRule ^([^/\.]+)/([^/\.]+)/([^/\.]+)/([^/\.]+)/?$ /$1.php?a=$2&b=$3&c=$4 [L]
+RewriteRule ^([^/\.]+)/([^/\.]+)/([^/\.]+)/([^/\.]+)/([^/\.]+)/?$ /$1.php?a=$2&b=$3&c=$4&d=$5 [L]
+RewriteRule ^([^/\.]+)/([^/\.]+)/([^/\.]+)/([^/\.]+)/([^/\.]+)/([^/\.]+)/?$ /$1.php?a=$2&b=$3&c=$4&d=$5&e=$6 [L]
+RewriteRule ^([^/\.]+)/([^/\.]+)/([^/\.]+)/([^/\.]+)/([^/\.]+)/([^/\.]+)/([^/\.]+)/?$ /$1.php?a=$2&b=$3&c=$4&d=$5&e=$6&f=$7 [L]
+RewriteRule ^([^/\.]+)/([^/\.]+)/([^/\.]+)/([^/\.]+)/([^/\.]+)/([^/\.]+)/([^/\.]+)/([^/\.]+)/?$ /$1.php?a=$2&b=$3&c=$4&d=$5&e=$6&f=$7&g=$8 [L]
+RewriteRule ^([^/\.]+)/([^/\.]+)/([^/\.]+)/([^/\.]+)/([^/\.]+)/([^/\.]+)/([^/\.]+)/([^/\.]+)/([^/\.]+)/?$ /$1.php?a=$2&b=$3&c=$4&d=$5&e=$6&f=$7&g=$8&h=$9 [L]
+RewriteRule ^([^/\.]+)/([^/\.]+)/([^/\.]+)/([^/\.]+)/([^/\.]+)/([^/\.]+)/([^/\.]+)/([^/\.]+)/([^/\.]+)/([^/\.]+)/?$ /$1.php?a=$2&b=$3&c=$4&d=$5&e=$6&f=$7&g=$8&h=$9&i=$10 [L]
+
+AddType application/octet-stream .csv
+AddType application/octet-stream .xls
+AddType application/octet-stream .doc
+AddType application/octet-stream .avi
+AddType application/octet-stream .mpg
+AddType application/octet-stream .mov
+AddType application/octet-stream .pdf
